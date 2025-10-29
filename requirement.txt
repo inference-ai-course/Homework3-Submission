@@ -1,0 +1,5 @@
+coqui-tts
+transformers
+openai-whisper
+fastapi[standard]
+uvicorn
