@@ -1,0 +1,15 @@
+meta {
+  name: New HTTP Request
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8000/chat
+  body: file
+  auth: none
+}
+
+body:file {
+  file: @file(/Users/lin/Project/AILearning/Homework3-Submission/test_audio.m4a) @contentType(audio/mp4)
+}
