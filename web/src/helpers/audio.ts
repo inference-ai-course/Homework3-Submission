@@ -12,7 +12,7 @@ export const requestMicrophonePermission = async (): Promise<boolean> => {
   }
 };
 
-export const getMediaRecorder = async (chunksRef: MutableRefObject<Blob[]>, onRecordingComplete: (blob: Blob) => void): Promise<MediaRecorder> => {
+export const getMediaRecorder = async (chunksRef: MutableRefObject<Blob[]>): Promise<MediaRecorder> => {
     const stream: MediaStream = await navigator.mediaDevices.getUserMedia({
       audio: {
         echoCancellation: true,
@@ -31,11 +31,25 @@ export const getMediaRecorder = async (chunksRef: MutableRefObject<Blob[]>, onRe
     }
 
     mediaRecorder.onstop = () => {
-      const audioBlob = new Blob(chunksRef.current, { type: 'audio/webm' });
-      onRecordingComplete(audioBlob);
       for (const track of stream.getTracks()) track.stop();
     };
 
     mediaRecorder.start();
     return mediaRecorder;
 }
+
+export const playAudioBlob = async (
+  blob: Blob,
+): Promise<void> => {
+
+  const url = URL.createObjectURL(blob);
+  const audio = new Audio(url);
+
+  const onEnded = () => {
+    URL.revokeObjectURL(url);
+    audio.removeEventListener('ended', onEnded);
+  };
+  audio.addEventListener('ended', onEnded);
+
+  await audio.play();
+};
