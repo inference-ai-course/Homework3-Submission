@@ -1,9 +1,9 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import FileResponse
 
-from src.audio.transcribe import transcribe_audio
-from src.audio.tts import text_to_speech
-from src.llm.generate import generate_response
+from server.src.audio.transcribe import transcribe_audio
+from server.src.audio.tts import text_to_speech
+from server.src.llm.generate import generate_response
 
 app = FastAPI()
 
