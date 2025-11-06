@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Response, UploadFile, File
 from fastapi.responses import FileResponse
 from response_generation import generate_response
+from text_to_speech import synthesize_speech
 from transcribe_audio import transcribe_audio
 
 app = FastAPI()
@@ -12,5 +13,5 @@ async def chat_endpoint(file: UploadFile = File(...)):
     print(user_text)
     generated_text = generate_response(user_text)
     print(generated_text)
-    # TODO: ASR → LLM → TTS
-    return Response("")
+    synthesize_speech(generated_text)
+    return FileResponse("zero_shot.wav")
