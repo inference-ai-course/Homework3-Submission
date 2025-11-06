@@ -14,17 +14,12 @@ module.exports = {
     sourceType: "module",
     ecmaFeatures: { jsx: true }
   },
-  plugins: ["@typescript-eslint", "react", "react-hooks", "unicorn"],
+  plugins: ["@typescript-eslint", "react-hooks", "unicorn"],
   extends: [
     "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:unicorn/recommended"
   ],
-  settings: {
-    react: { version: "detect" }
-  },
   rules: {
     // TypeScript/React ergonomics
     "react/react-in-jsx-scope": "off",

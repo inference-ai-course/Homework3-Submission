@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const postChat = async (
   audioBlob: Blob,
-  filename: string = "recording.webm"
+  filename = "recording.webm"
 ): Promise<Blob> => {
   const formData = new FormData();
   formData.append("file", audioBlob, filename);
