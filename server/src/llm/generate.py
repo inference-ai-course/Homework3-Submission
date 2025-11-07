@@ -1,34 +1,22 @@
-import os
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import torch
+from ollama import Client
 
-hf_token = os.getenv("HUGGINGFACE_HUB_TOKEN")
+client = Client(host='http://localhost:11434')  # or remote endpoint if cloud-based
 
-model_name = "mosaicml/mpt-7b-chat"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", dtype=torch.float16)
+model_name = "gpt-oss:20b-cloud"
 
 conversation_history = [
-    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "system", "content": "You are a helpful assistant. Your responses will be used for TTS as a live conversation, so keep your responses short. The user will not be able to see any visuals or read any latex/math. Respond in one sentence."},
 ]
 
 def generate_response(user_text):
     conversation_history.append({"role": "user", "content": user_text})
-    # Construct prompt from history
-    prompt = ""
-    for msg in conversation_history:
-        print(msg)
-        if msg["role"] == "system":
-            prompt += f"System: {msg['content']}\n"
-        elif msg["role"] == "user":
-            prompt += f"User: {msg['content']}\n"
-        elif msg["role"] == "assistant":
-            prompt += f"Assistant: {msg['content']}\n"
 
-    prompt += "Assistant: "
-    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-    outputs = model.generate(**inputs, max_new_tokens=100)
-    generated_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-    conversation_history.append({"role": "assistant", "text": generated_text})
-    print(conversation_history)
+    response = client.chat(model=model_name, messages=conversation_history, options={
+        "max_output_tokens": 100
+    })
+
+    generated_text = response["message"]["content"]
+
+    conversation_history.append({"role": "assistant", "content": generated_text})
+
     return generated_text
