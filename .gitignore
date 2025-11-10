@@ -205,3 +205,12 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Voice Assistant specific
+temp_files/
+*.wav
+*.mp3
+*.m4a
+response*.wav
+pretrained_models/
+third_party/
