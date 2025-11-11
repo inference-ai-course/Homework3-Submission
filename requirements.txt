@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+gradio
+openai-whisper
+pyttsx3
+requests
+python-multipart
