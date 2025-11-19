@@ -1,0 +1,707 @@
+2025-11-18 20:37:53,139 - voice_agent - INFO - main:24 - ============================================================
+2025-11-18 20:37:53,139 - voice_agent - INFO - main:25 - Starting Voice Agent
+2025-11-18 20:37:53,139 - voice_agent - INFO - main:26 - ============================================================
+2025-11-18 20:43:22,584 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-18 20:43:33,807 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-18 20:43:53,411 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-18 20:43:54,365 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-18 20:43:55,369 - voice_agent - INFO - __init__:34 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-18 20:44:37,985 - voice_agent - INFO - main:24 - ============================================================
+2025-11-18 20:44:37,985 - voice_agent - INFO - main:25 - Starting Voice Agent
+2025-11-18 20:44:37,985 - voice_agent - INFO - main:26 - ============================================================
+2025-11-18 20:44:40,418 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-18 20:44:41,686 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-18 20:44:42,941 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-18 20:44:44,398 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-18 20:44:45,414 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-18 20:44:46,711 - voice_agent - INFO - __init__:34 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-18 20:44:53,136 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-18 20:44:54,221 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-18 20:44:54,937 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-18 20:44:55,826 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-18 20:44:56,727 - voice_agent - INFO - __init__:34 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-18 20:45:10,661 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-18 20:45:11,849 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-18 20:53:47,079 - voice_agent - INFO - main:24 - ============================================================
+2025-11-18 20:53:47,079 - voice_agent - INFO - main:25 - Starting Voice Agent
+2025-11-18 20:53:47,079 - voice_agent - INFO - main:26 - ============================================================
+2025-11-18 20:53:48,232 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-18 20:53:49,543 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-18 20:53:50,619 - voice_agent - INFO - __init__:34 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 11:40:19,854 - voice_agent - INFO - main:24 - ============================================================
+2025-11-19 11:40:19,855 - voice_agent - INFO - main:25 - Starting Voice Agent
+2025-11-19 11:40:19,855 - voice_agent - INFO - main:26 - ============================================================
+2025-11-19 11:40:21,651 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 11:40:21,890 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 11:40:23,723 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 11:40:23,724 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 11:40:26,285 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 11:40:26,297 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 11:40:26,317 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 11:45:36,392 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 11:45:36,616 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 11:45:38,419 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 11:45:38,419 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 11:45:42,526 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 11:45:42,547 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 11:45:42,559 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 11:45:47,269 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 11:45:47,280 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 11:45:47,560 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 11:45:47,561 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 11:45:49,566 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 11:45:49,566 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 11:45:49,566 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 11:45:49,566 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 11:45:56,188 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 11:45:56,188 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 11:45:56,217 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 11:45:56,217 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 11:45:56,236 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 11:45:56,236 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 11:45:56,245 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 11:45:56,245 - voice_agent - INFO - <module>:78 -   GET, HEAD /openapi.json
+2025-11-19 11:45:56,245 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs
+2025-11-19 11:45:56,245 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs/oauth2-redirect
+2025-11-19 11:45:56,245 - voice_agent - INFO - <module>:78 -   GET, HEAD /redoc
+2025-11-19 11:45:56,245 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 11:45:56,245 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 11:45:56,245 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 11:45:56,249 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 11:45:56,249 - voice_agent - INFO - <module>:78 -   HEAD, GET /openapi.json
+2025-11-19 11:45:56,249 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs
+2025-11-19 11:45:56,249 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs/oauth2-redirect
+2025-11-19 11:45:56,249 - voice_agent - INFO - <module>:78 -   HEAD, GET /redoc
+2025-11-19 11:45:56,249 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 11:45:56,249 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 11:45:56,249 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 11:45:56,259 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 11:45:56,259 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 11:45:56,260 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 11:45:59,595 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 11:46:01,943 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 11:46:02,192 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 11:46:04,143 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 11:46:04,143 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 11:46:06,956 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 11:46:07,171 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 11:46:08,590 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 11:46:08,590 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 11:46:10,798 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 11:46:10,805 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 11:46:10,808 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 11:46:10,811 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 11:46:10,812 - voice_agent - INFO - <module>:78 -   HEAD, GET /openapi.json
+2025-11-19 11:46:10,812 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs
+2025-11-19 11:46:10,812 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs/oauth2-redirect
+2025-11-19 11:46:10,812 - voice_agent - INFO - <module>:78 -   HEAD, GET /redoc
+2025-11-19 11:46:10,812 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 11:46:10,812 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 11:46:10,812 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 11:46:10,812 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 11:46:10,812 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 11:46:10,812 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 11:46:11,015 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 11:46:12,286 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 11:46:12,504 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 11:46:13,898 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 11:46:13,899 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 11:46:14,787 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 11:46:14,791 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 11:46:14,795 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 11:46:14,799 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 11:46:14,800 - voice_agent - INFO - <module>:78 -   GET, HEAD /openapi.json
+2025-11-19 11:46:14,800 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs
+2025-11-19 11:46:14,800 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs/oauth2-redirect
+2025-11-19 11:46:14,800 - voice_agent - INFO - <module>:78 -   GET, HEAD /redoc
+2025-11-19 11:46:14,800 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 11:46:14,800 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 11:46:14,800 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 11:46:14,801 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 11:46:14,801 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 11:46:14,801 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 11:47:44,160 - voice_agent - WARNING - http_exception_handler:13 - HTTP 404: Not Found
+2025-11-19 12:02:30,667 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 12:02:34,596 - voice_agent - INFO - main:24 - ============================================================
+2025-11-19 12:02:34,598 - voice_agent - INFO - main:25 - Starting Voice Agent
+2025-11-19 12:02:34,598 - voice_agent - INFO - main:26 - ============================================================
+2025-11-19 12:02:35,526 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 12:02:35,761 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 12:02:37,715 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 12:02:37,716 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 12:02:42,279 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 12:02:42,288 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 12:02:42,297 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 12:02:42,301 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 12:02:42,301 - voice_agent - INFO - <module>:78 -   GET, HEAD /openapi.json
+2025-11-19 12:02:42,301 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs
+2025-11-19 12:02:42,301 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs/oauth2-redirect
+2025-11-19 12:02:42,301 - voice_agent - INFO - <module>:78 -   GET, HEAD /redoc
+2025-11-19 12:02:42,301 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 12:02:42,301 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 12:02:42,301 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 12:02:42,302 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 12:02:42,302 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 12:02:42,302 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 12:05:34,200 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 13:36:55,693 - voice_agent - INFO - main:24 - ============================================================
+2025-11-19 13:36:55,695 - voice_agent - INFO - main:25 - Starting Voice Agent
+2025-11-19 13:36:55,695 - voice_agent - INFO - main:26 - ============================================================
+2025-11-19 13:36:56,745 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 13:36:56,995 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 13:36:58,968 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 13:36:58,968 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 13:37:05,635 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 13:37:05,651 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 13:37:05,667 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 13:37:05,676 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 13:37:05,676 - voice_agent - INFO - <module>:78 -   HEAD, GET /openapi.json
+2025-11-19 13:37:05,677 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs
+2025-11-19 13:37:05,677 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs/oauth2-redirect
+2025-11-19 13:37:05,677 - voice_agent - INFO - <module>:78 -   HEAD, GET /redoc
+2025-11-19 13:37:05,677 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 13:37:05,677 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 13:37:05,677 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 13:37:05,685 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 13:37:05,685 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 13:37:05,685 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 13:37:38,620 - voice_agent - INFO - chat_endpoint:80 - Received audio file: test.wav (14.25 KB) Session: new
+2025-11-19 13:37:38,622 - voice_agent - INFO - save_uploaded_file:73 - Saved file: data/temp/20251119_133738_e1aa4966f0f3.wav
+2025-11-19 13:37:38,622 - voice_agent - INFO - process:69 - Starting pipeline for session: None
+2025-11-19 13:37:38,622 - voice_agent - INFO - create_session:34 - Created new session: fc20105b-101e-435e-86dd-f64051573205
+2025-11-19 13:37:38,622 - voice_agent - INFO - process:77 - Created new session: fc20105b-101e-435e-86dd-f64051573205
+2025-11-19 13:37:40,586 - voice_agent - INFO - transcribe:58 - Transcription successful. Language: en, Text length: 19
+2025-11-19 13:37:40,587 - voice_agent - INFO - process:86 - ASR completed: 'Hello, how are you?...'
+2025-11-19 13:37:45,994 - voice_agent - WARNING - http_exception_handler:13 - HTTP 405: Method Not Allowed
+2025-11-19 13:37:46,087 - voice_agent - WARNING - http_exception_handler:13 - HTTP 404: Not Found
+2025-11-19 13:37:50,051 - voice_agent - INFO - generate:121 - Generated response: 328 chars, ~221 tokens
+2025-11-19 13:37:50,052 - voice_agent - INFO - process:101 - LLM completed: 'Greetings, how can I help you today?
+řetdělícíkání, můžete tě zajímat?utečdění
+
+How may I be of assi...'
+2025-11-19 13:37:53,852 - voice_agent - INFO - synthesize:63 - TTS synthesis successful: data/temp/20251119_133750_a3a4940098b7.mp3
+2025-11-19 13:37:53,853 - voice_agent - INFO - process:110 - TTS completed: data/temp/20251119_133750_a3a4940098b7.mp3
+2025-11-19 13:37:53,853 - voice_agent - INFO - process:128 - Pipeline completed in 15.23s (Turn 1/5)
+2025-11-19 13:37:53,853 - voice_agent - INFO - chat_endpoint:109 - Returning response - Session: fc20105b-101e-435e-86dd-f64051573205, Turn: 1, Time: 15.23s
+2025-11-19 13:37:53,853 - voice_agent - ERROR - chat_endpoint:127 - Chat endpoint error: 'latin-1' codec can't encode character '\u0159' in position 37: ordinal not in range(256)
+Traceback (most recent call last):
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/api/routes/chat.py", line 116, in chat_endpoint
+    return FileResponse(
+           ^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/responses.py", line 306, in __init__
+    self.init_headers(headers)
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/responses.py", line 74, in init_headers
+    (k.lower().encode("latin-1"), v.encode("latin-1"))
+                                  ^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'latin-1' codec can't encode character '\u0159' in position 37: ordinal not in range(256)
+2025-11-19 13:37:53,854 - voice_agent - WARNING - http_exception_handler:13 - HTTP 500: An error occurred while processing your request.: 'latin-1' codec can't encode character '\u0159' in position 37: ordinal not in range(256)
+2025-11-19 13:42:06,560 - voice_agent - INFO - chat_endpoint:80 - Received audio file: test.wav (14.25 KB) Session: new
+2025-11-19 13:42:06,563 - voice_agent - INFO - save_uploaded_file:73 - Saved file: data/temp/20251119_134206_693b5c2d1301.wav
+2025-11-19 13:42:06,563 - voice_agent - INFO - process:69 - Starting pipeline for session: None
+2025-11-19 13:42:06,564 - voice_agent - INFO - create_session:34 - Created new session: 39295f77-6b7b-4e7b-abcb-52443fbf81c9
+2025-11-19 13:42:06,564 - voice_agent - INFO - process:77 - Created new session: 39295f77-6b7b-4e7b-abcb-52443fbf81c9
+2025-11-19 13:42:06,985 - voice_agent - INFO - transcribe:58 - Transcription successful. Language: en, Text length: 19
+2025-11-19 13:42:06,985 - voice_agent - INFO - process:86 - ASR completed: 'Hello, how are you?...'
+2025-11-19 13:42:16,405 - voice_agent - INFO - generate:121 - Generated response: 490 chars, ~222 tokens
+2025-11-19 13:42:16,405 - voice_agent - INFO - process:101 - LLM completed: 'Greetings, I'm a helpful voice assistant. I can help with many things, including finding directions,...'
+2025-11-19 13:42:19,893 - voice_agent - INFO - synthesize:63 - TTS synthesis successful: data/temp/20251119_134216_6d98e6a103e0.mp3
+2025-11-19 13:42:19,894 - voice_agent - INFO - process:110 - TTS completed: data/temp/20251119_134216_6d98e6a103e0.mp3
+2025-11-19 13:42:19,894 - voice_agent - INFO - process:128 - Pipeline completed in 13.33s (Turn 1/5)
+2025-11-19 13:42:19,894 - voice_agent - INFO - chat_endpoint:109 - Returning response - Session: 39295f77-6b7b-4e7b-abcb-52443fbf81c9, Turn: 1, Time: 13.33s
+2025-11-19 13:42:19,906 - voice_agent - ERROR - general_exception_handler:38 - Unexpected error: Invalid HTTP header value.
+Traceback (most recent call last):
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/routing.py", line 69, in app
+    await response(scope, receive, send)
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/responses.py", line 343, in __call__
+    await send(
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 65, in sender
+    await send(message)
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 159, in _send
+    await send(message)
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 512, in send
+    raise RuntimeError("Invalid HTTP header value.")
+RuntimeError: Invalid HTTP header value.
+2025-11-19 13:42:28,585 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 13:42:30,145 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 13:42:30,381 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 13:42:32,178 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 13:42:32,400 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 13:42:32,988 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 13:42:33,198 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 13:42:33,814 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 13:42:33,815 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 13:42:34,604 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 13:42:34,605 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 13:42:42,025 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 13:42:42,025 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 13:42:42,040 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 13:42:42,040 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 13:42:42,052 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 13:42:42,052 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 13:42:42,058 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 13:42:42,058 - voice_agent - INFO - <module>:78 -   HEAD, GET /openapi.json
+2025-11-19 13:42:42,058 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs
+2025-11-19 13:42:42,058 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs/oauth2-redirect
+2025-11-19 13:42:42,058 - voice_agent - INFO - <module>:78 -   HEAD, GET /redoc
+2025-11-19 13:42:42,058 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 13:42:42,058 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 13:42:42,058 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 13:42:42,059 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 13:42:42,059 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 13:42:42,059 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 13:42:46,408 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 13:42:48,096 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 13:42:48,350 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 13:42:50,078 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 13:42:50,289 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 13:42:52,376 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 13:42:52,581 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 13:42:54,148 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 13:42:54,356 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 13:42:55,731 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 13:42:55,732 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 13:42:58,705 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 13:42:58,709 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 13:42:58,713 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 13:42:58,717 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 13:42:58,717 - voice_agent - INFO - <module>:78 -   GET, HEAD /openapi.json
+2025-11-19 13:42:58,717 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs
+2025-11-19 13:42:58,717 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs/oauth2-redirect
+2025-11-19 13:42:58,717 - voice_agent - INFO - <module>:78 -   GET, HEAD /redoc
+2025-11-19 13:42:58,717 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 13:42:58,717 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 13:42:58,717 - voice_agent - INFO - <module>:78 -   GET /chat/
+2025-11-19 13:42:58,717 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 13:42:58,717 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 13:42:58,718 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 13:42:58,718 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 13:47:38,974 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 13:47:42,982 - voice_agent - INFO - main:24 - ============================================================
+2025-11-19 13:47:42,982 - voice_agent - INFO - main:25 - Starting Voice Agent
+2025-11-19 13:47:42,982 - voice_agent - INFO - main:26 - ============================================================
+2025-11-19 13:47:43,825 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 13:47:44,054 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 13:47:45,914 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 13:47:45,914 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 13:47:50,551 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 13:47:50,560 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 13:47:50,567 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 13:47:50,571 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 13:47:50,571 - voice_agent - INFO - <module>:78 -   HEAD, GET /openapi.json
+2025-11-19 13:47:50,571 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs
+2025-11-19 13:47:50,571 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs/oauth2-redirect
+2025-11-19 13:47:50,572 - voice_agent - INFO - <module>:78 -   HEAD, GET /redoc
+2025-11-19 13:47:50,572 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 13:47:50,572 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 13:47:50,572 - voice_agent - INFO - <module>:78 -   GET /chat/
+2025-11-19 13:47:50,572 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 13:47:50,572 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 13:47:50,572 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 13:47:50,572 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 13:48:04,860 - voice_agent - INFO - chat_endpoint:103 - Received audio file: test.wav (14.25 KB) Session: new
+2025-11-19 13:48:04,861 - voice_agent - INFO - save_uploaded_file:73 - Saved file: data/temp/20251119_134804_fca924bd039b.wav
+2025-11-19 13:48:04,861 - voice_agent - INFO - process:69 - Starting pipeline for session: None
+2025-11-19 13:48:04,861 - voice_agent - INFO - create_session:34 - Created new session: 307019c6-c021-4d69-93b2-158ef3f8218c
+2025-11-19 13:48:04,861 - voice_agent - INFO - process:77 - Created new session: 307019c6-c021-4d69-93b2-158ef3f8218c
+2025-11-19 13:48:05,351 - voice_agent - INFO - transcribe:58 - Transcription successful. Language: en, Text length: 19
+2025-11-19 13:48:05,351 - voice_agent - INFO - process:86 - ASR completed: 'Hello, how are you?...'
+2025-11-19 13:48:14,438 - voice_agent - INFO - generate:121 - Generated response: 573 chars, ~222 tokens
+2025-11-19 13:48:14,438 - voice_agent - INFO - process:101 - LLM completed: 'How are you doing?
+
+
+
+
+
+querySelector
+querySelector() is an easy way to select elements by their CSS...'
+2025-11-19 13:48:18,322 - voice_agent - INFO - synthesize:63 - TTS synthesis successful: data/temp/20251119_134814_f6cce81d4d60.mp3
+2025-11-19 13:48:18,322 - voice_agent - INFO - process:110 - TTS completed: data/temp/20251119_134814_f6cce81d4d60.mp3
+2025-11-19 13:48:18,323 - voice_agent - INFO - process:128 - Pipeline completed in 13.46s (Turn 1/5)
+2025-11-19 13:48:18,323 - voice_agent - INFO - chat_endpoint:149 - Returning response - Session: 307019c6-c021-4d69-93b2-158ef3f8218c, Turn: 1, Time: 13.46s
+2025-11-19 16:50:48,529 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 16:50:48,538 - voice_agent - INFO - cleanup_old_files:114 - Cleaned up 3 old temp files
+2025-11-19 16:51:15,495 - voice_agent - INFO - main:24 - ============================================================
+2025-11-19 16:51:15,495 - voice_agent - INFO - main:25 - Starting Voice Agent
+2025-11-19 16:51:15,495 - voice_agent - INFO - main:26 - ============================================================
+2025-11-19 16:51:16,523 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 16:51:16,770 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 16:51:18,789 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 16:51:18,789 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 16:51:24,411 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 16:51:24,421 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 16:51:24,431 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 16:51:24,436 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 16:51:24,436 - voice_agent - INFO - <module>:78 -   GET, HEAD /openapi.json
+2025-11-19 16:51:24,436 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs
+2025-11-19 16:51:24,436 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs/oauth2-redirect
+2025-11-19 16:51:24,436 - voice_agent - INFO - <module>:78 -   GET, HEAD /redoc
+2025-11-19 16:51:24,436 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 16:51:24,436 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 16:51:24,436 - voice_agent - INFO - <module>:78 -   GET /chat/
+2025-11-19 16:51:24,436 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 16:51:24,437 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 16:51:24,437 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 16:51:24,437 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 16:51:31,605 - voice_agent - INFO - chat_endpoint:103 - Received audio file: test.wav (14.25 KB) Session: new
+2025-11-19 16:51:31,608 - voice_agent - INFO - save_uploaded_file:73 - Saved file: data/temp/20251119_165131_e7628c1fcffd.wav
+2025-11-19 16:51:31,608 - voice_agent - INFO - process:69 - Starting pipeline for session: None
+2025-11-19 16:51:31,609 - voice_agent - INFO - create_session:34 - Created new session: de919965-ea2a-45ec-b37a-8b63ff256163
+2025-11-19 16:51:31,609 - voice_agent - INFO - process:77 - Created new session: de919965-ea2a-45ec-b37a-8b63ff256163
+2025-11-19 16:51:32,520 - voice_agent - INFO - transcribe:58 - Transcription successful. Language: en, Text length: 19
+2025-11-19 16:51:32,520 - voice_agent - INFO - process:86 - ASR completed: 'Hello, how are you?...'
+2025-11-19 16:51:42,283 - voice_agent - INFO - generate:121 - Generated response: 453 chars, ~222 tokens
+2025-11-19 16:51:42,284 - voice_agent - INFO - process:101 - LLM completed: 'I'm great!reetings，存于
+
+děníBeginInit，存于
+
+How are you?ें
+
+Greetings! Redistributions!
+
+BeginInit，存于
+
+...'
+2025-11-19 16:51:53,168 - voice_agent - INFO - synthesize:63 - TTS synthesis successful: data/temp/20251119_165142_b2444c46e7f7.mp3
+2025-11-19 16:51:53,169 - voice_agent - INFO - process:110 - TTS completed: data/temp/20251119_165142_b2444c46e7f7.mp3
+2025-11-19 16:51:53,169 - voice_agent - INFO - process:128 - Pipeline completed in 21.56s (Turn 1/5)
+2025-11-19 16:51:53,170 - voice_agent - INFO - chat_endpoint:149 - Returning response - Session: de919965-ea2a-45ec-b37a-8b63ff256163, Turn: 1, Time: 21.56s
+2025-11-19 16:51:53,170 - voice_agent - ERROR - chat_endpoint:167 - Chat endpoint error: 'latin-1' codec can't encode characters in position 18-20: ordinal not in range(256)
+Traceback (most recent call last):
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/api/routes/chat.py", line 156, in chat_endpoint
+    return FileResponse(
+           ^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/responses.py", line 306, in __init__
+    self.init_headers(headers)
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/starlette/responses.py", line 74, in init_headers
+    (k.lower().encode("latin-1"), v.encode("latin-1"))
+                                  ^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 18-20: ordinal not in range(256)
+2025-11-19 16:51:53,171 - voice_agent - WARNING - http_exception_handler:13 - HTTP 500: An error occurred while processing your request.: 'latin-1' codec can't encode characters in position 18-20: ordinal not in range(256)
+2025-11-19 16:55:15,348 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 16:55:17,058 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 16:55:17,297 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 16:55:18,921 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 16:55:19,143 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 16:55:19,372 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 16:55:19,372 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 16:55:20,585 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 16:55:20,585 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 16:55:27,587 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 16:55:27,593 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 16:55:27,612 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 16:55:27,612 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 16:55:27,632 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 16:55:27,632 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 16:55:27,638 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 16:55:27,638 - voice_agent - INFO - <module>:78 -   HEAD, GET /openapi.json
+2025-11-19 16:55:27,638 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs
+2025-11-19 16:55:27,638 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs/oauth2-redirect
+2025-11-19 16:55:27,638 - voice_agent - INFO - <module>:78 -   HEAD, GET /redoc
+2025-11-19 16:55:27,638 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 16:55:27,638 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 16:55:27,638 - voice_agent - INFO - <module>:78 -   GET /chat/
+2025-11-19 16:55:27,638 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 16:55:27,644 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 16:55:27,644 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 16:55:27,644 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 16:55:29,464 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 16:55:31,294 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 16:55:31,572 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 16:55:33,639 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 16:55:33,639 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 16:55:34,519 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 16:55:34,744 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 16:55:36,276 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 16:55:36,277 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 16:55:36,549 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 16:55:36,551 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 16:55:36,554 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 16:55:36,557 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 16:55:36,560 - voice_agent - INFO - <module>:78 -   HEAD, GET /openapi.json
+2025-11-19 16:55:36,560 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs
+2025-11-19 16:55:36,560 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs/oauth2-redirect
+2025-11-19 16:55:36,560 - voice_agent - INFO - <module>:78 -   HEAD, GET /redoc
+2025-11-19 16:55:36,560 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 16:55:36,560 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 16:55:36,560 - voice_agent - INFO - <module>:78 -   GET /chat/
+2025-11-19 16:55:36,560 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 16:55:36,560 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 16:55:36,560 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 16:55:36,560 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 16:55:39,025 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 16:55:39,051 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 16:55:39,080 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 16:55:42,761 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 16:55:44,344 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 16:55:44,592 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 16:55:46,796 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 16:55:47,004 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 16:55:48,474 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 16:55:48,474 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 16:55:50,443 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 16:55:50,456 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 16:55:50,461 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 16:55:50,465 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 16:55:50,465 - voice_agent - INFO - <module>:78 -   HEAD, GET /openapi.json
+2025-11-19 16:55:50,465 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs
+2025-11-19 16:55:50,465 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs/oauth2-redirect
+2025-11-19 16:55:50,465 - voice_agent - INFO - <module>:78 -   HEAD, GET /redoc
+2025-11-19 16:55:50,465 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 16:55:50,465 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 16:55:50,465 - voice_agent - INFO - <module>:78 -   GET /chat/
+2025-11-19 16:55:50,465 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 16:55:50,465 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 16:55:50,465 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 16:55:50,465 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 16:56:14,525 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 16:56:15,687 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 16:56:15,931 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 16:56:17,374 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 16:56:17,581 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 16:56:18,981 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 16:56:18,981 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 16:56:19,906 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 16:56:19,912 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 16:56:19,915 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 16:56:19,919 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 16:56:19,919 - voice_agent - INFO - <module>:78 -   GET, HEAD /openapi.json
+2025-11-19 16:56:19,919 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs
+2025-11-19 16:56:19,919 - voice_agent - INFO - <module>:78 -   GET, HEAD /docs/oauth2-redirect
+2025-11-19 16:56:19,919 - voice_agent - INFO - <module>:78 -   GET, HEAD /redoc
+2025-11-19 16:56:19,919 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 16:56:19,919 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 16:56:19,919 - voice_agent - INFO - <module>:78 -   GET /chat/
+2025-11-19 16:56:19,919 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 16:56:19,919 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 16:56:19,919 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 16:56:19,919 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 16:56:27,343 - voice_agent - INFO - chat_endpoint:103 - Received audio file: test.wav (14.25 KB) Session: new
+2025-11-19 16:56:27,345 - voice_agent - INFO - save_uploaded_file:73 - Saved file: data/temp/20251119_165627_79e7f935163e.wav
+2025-11-19 16:56:27,345 - voice_agent - INFO - process:69 - Starting pipeline for session: None
+2025-11-19 16:56:27,345 - voice_agent - INFO - create_session:34 - Created new session: 678ae235-5a7e-4b5f-9c93-8c319af072e1
+2025-11-19 16:56:27,345 - voice_agent - INFO - process:77 - Created new session: 678ae235-5a7e-4b5f-9c93-8c319af072e1
+2025-11-19 16:56:27,861 - voice_agent - INFO - transcribe:58 - Transcription successful. Language: en, Text length: 19
+2025-11-19 16:56:27,861 - voice_agent - INFO - process:86 - ASR completed: 'Hello, how are you?...'
+2025-11-19 16:56:37,289 - voice_agent - INFO - generate:121 - Generated response: 869 chars, ~222 tokens
+2025-11-19 16:56:37,290 - voice_agent - INFO - process:101 - LLM completed: 'How can I help you?
+
+
+
+
+
+<IActionResult
+
+BeginInitBeginInitBeginInitBeginInitBeginInitBeginInitBegin...'
+2025-11-19 16:56:41,177 - voice_agent - INFO - synthesize:63 - TTS synthesis successful: data/temp/20251119_165637_dde9107fc8ce.mp3
+2025-11-19 16:56:41,177 - voice_agent - INFO - process:110 - TTS completed: data/temp/20251119_165637_dde9107fc8ce.mp3
+2025-11-19 16:56:41,178 - voice_agent - INFO - process:128 - Pipeline completed in 13.83s (Turn 1/5)
+2025-11-19 16:56:41,178 - voice_agent - INFO - chat_endpoint:175 - Returning response - Session: 678ae235-5a7e-4b5f-9c93-8c319af072e1, Turn: 1, Time: 13.83s
+2025-11-19 16:56:42,249 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 16:56:52,527 - voice_agent - INFO - main:24 - ============================================================
+2025-11-19 16:56:52,527 - voice_agent - INFO - main:25 - Starting Voice Agent
+2025-11-19 16:56:52,527 - voice_agent - INFO - main:26 - ============================================================
+2025-11-19 16:56:53,325 - voice_agent - INFO - __init__:32 - Loading Whisper model: tiny on cpu
+2025-11-19 16:56:53,567 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 16:56:55,424 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 16:56:55,424 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 16:56:59,790 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 16:56:59,799 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 16:56:59,811 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 16:56:59,816 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 16:56:59,816 - voice_agent - INFO - <module>:78 -   HEAD, GET /openapi.json
+2025-11-19 16:56:59,816 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs
+2025-11-19 16:56:59,816 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs/oauth2-redirect
+2025-11-19 16:56:59,816 - voice_agent - INFO - <module>:78 -   HEAD, GET /redoc
+2025-11-19 16:56:59,816 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 16:56:59,816 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 16:56:59,816 - voice_agent - INFO - <module>:78 -   GET /chat/
+2025-11-19 16:56:59,817 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 16:56:59,817 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 16:56:59,817 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 16:56:59,817 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 16:57:21,111 - voice_agent - INFO - chat_endpoint:103 - Received audio file: test.wav (14.25 KB) Session: new
+2025-11-19 16:57:21,112 - voice_agent - INFO - save_uploaded_file:73 - Saved file: data/temp/20251119_165721_e08564666d6e.wav
+2025-11-19 16:57:21,112 - voice_agent - INFO - process:69 - Starting pipeline for session: None
+2025-11-19 16:57:21,113 - voice_agent - INFO - create_session:34 - Created new session: 6165231e-93bf-4da0-850c-f8d712883981
+2025-11-19 16:57:21,113 - voice_agent - INFO - process:77 - Created new session: 6165231e-93bf-4da0-850c-f8d712883981
+2025-11-19 16:57:21,565 - voice_agent - INFO - transcribe:58 - Transcription successful. Language: en, Text length: 19
+2025-11-19 16:57:21,565 - voice_agent - INFO - process:86 - ASR completed: 'Hello, how are you?...'
+2025-11-19 16:57:22,572 - voice_agent - INFO - generate:121 - Generated response: 0 chars, ~122 tokens
+2025-11-19 16:57:22,573 - voice_agent - INFO - process:101 - LLM completed: '...'
+2025-11-19 16:57:22,573 - voice_agent - ERROR - synthesize:72 - TTS synthesis failed: No text to speak
+2025-11-19 16:57:22,573 - voice_agent - ERROR - process:143 - Pipeline failed: No text to speak
+Traceback (most recent call last):
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/orchestrator/voice_pipeline.py", line 105, in process
+    tts_result = await self.run_in_executor(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/orchestrator/voice_pipeline.py", line 43, in run_in_executor
+    return await loop.run_in_executor(self.executor, func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/services/tts/gtts_client.py", line 47, in synthesize
+    tts = gTTS(
+          ^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/gtts/tts.py", line 128, in __init__
+    assert text, "No text to speak"
+           ^^^^
+AssertionError: No text to speak
+2025-11-19 16:57:22,574 - voice_agent - ERROR - chat_endpoint:193 - Chat endpoint error: No text to speak
+Traceback (most recent call last):
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/api/routes/chat.py", line 116, in chat_endpoint
+    response = await voice_pipeline.process(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/orchestrator/voice_pipeline.py", line 105, in process
+    tts_result = await self.run_in_executor(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/orchestrator/voice_pipeline.py", line 43, in run_in_executor
+    return await loop.run_in_executor(self.executor, func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/services/tts/gtts_client.py", line 47, in synthesize
+    tts = gTTS(
+          ^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/gtts/tts.py", line 128, in __init__
+    assert text, "No text to speak"
+           ^^^^
+AssertionError: No text to speak
+2025-11-19 16:57:22,574 - voice_agent - WARNING - http_exception_handler:13 - HTTP 500: An error occurred while processing your request.: No text to speak
+2025-11-19 16:59:24,422 - voice_agent - INFO - lifespan:44 - Shutting down application
+2025-11-19 17:02:05,032 - voice_agent - INFO - main:24 - ============================================================
+2025-11-19 17:02:05,032 - voice_agent - INFO - main:25 - Starting Voice Agent
+2025-11-19 17:02:05,032 - voice_agent - INFO - main:26 - ============================================================
+2025-11-19 17:02:05,819 - voice_agent - INFO - __init__:32 - Loading Whisper model: small on cpu
+2025-11-19 17:02:06,813 - voice_agent - INFO - __init__:34 - Whisper model loaded successfully
+2025-11-19 17:02:08,504 - voice_agent - INFO - __init__:35 - Loading LLM model: meta-llama/Llama-3.2-1B on cpu
+2025-11-19 17:02:08,504 - voice_agent - INFO - __init__:42 - Using Hugging Face token for model access
+2025-11-19 17:02:14,270 - voice_agent - INFO - __init__:81 - LLM model loaded successfully
+2025-11-19 17:02:14,284 - voice_agent - INFO - __init__:31 - Initialized gTTS service (language: en, slow: False)
+2025-11-19 17:02:14,302 - voice_agent - INFO - __init__:38 - Voice pipeline initialized
+2025-11-19 17:02:14,308 - voice_agent - INFO - <module>:75 - Registered routes:
+2025-11-19 17:02:14,308 - voice_agent - INFO - <module>:78 -   HEAD, GET /openapi.json
+2025-11-19 17:02:14,308 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs
+2025-11-19 17:02:14,308 - voice_agent - INFO - <module>:78 -   HEAD, GET /docs/oauth2-redirect
+2025-11-19 17:02:14,308 - voice_agent - INFO - <module>:78 -   HEAD, GET /redoc
+2025-11-19 17:02:14,308 - voice_agent - INFO - <module>:78 -   GET /health
+2025-11-19 17:02:14,308 - voice_agent - INFO - <module>:78 -   GET /
+2025-11-19 17:02:14,308 - voice_agent - INFO - <module>:78 -   GET /chat/
+2025-11-19 17:02:14,308 - voice_agent - INFO - <module>:78 -   POST /chat/
+2025-11-19 17:02:14,309 - voice_agent - INFO - lifespan:34 - Starting Voice Agent v1.0.0
+2025-11-19 17:02:14,309 - voice_agent - INFO - lifespan:35 - Environment: development
+2025-11-19 17:02:14,309 - voice_agent - INFO - lifespan:36 - Debug mode: True
+2025-11-19 17:02:27,392 - voice_agent - INFO - chat_endpoint:103 - Received audio file: turn1_input.wav (16.69 KB) Session: new
+2025-11-19 17:02:27,392 - voice_agent - INFO - save_uploaded_file:73 - Saved file: data/temp/20251119_170227_b899622a3e4c.wav
+2025-11-19 17:02:27,393 - voice_agent - INFO - process:69 - Starting pipeline for session: None
+2025-11-19 17:02:27,393 - voice_agent - INFO - create_session:34 - Created new session: e8386bed-b775-4aaf-8b5f-6f119abcebbe
+2025-11-19 17:02:27,393 - voice_agent - INFO - process:77 - Created new session: e8386bed-b775-4aaf-8b5f-6f119abcebbe
+2025-11-19 17:02:29,195 - voice_agent - INFO - transcribe:58 - Transcription successful. Language: en, Text length: 25
+2025-11-19 17:02:29,195 - voice_agent - INFO - process:86 - ASR completed: 'Hello, how are you today?...'
+2025-11-19 17:02:38,260 - voice_agent - INFO - generate:121 - Generated response: 884 chars, ~223 tokens
+2025-11-19 17:02:38,261 - voice_agent - INFO - process:101 - LLM completed: 'How can I help you today?
+BeginInitSCRIPTORC onCreateViewHolderSCRIPTORC onCreateViewHolderSCRIPTORC...'
+2025-11-19 17:02:41,467 - voice_agent - INFO - synthesize:63 - TTS synthesis successful: data/temp/20251119_170238_65d4948d0be3.mp3
+2025-11-19 17:02:41,467 - voice_agent - INFO - process:110 - TTS completed: data/temp/20251119_170238_65d4948d0be3.mp3
+2025-11-19 17:02:41,468 - voice_agent - INFO - process:128 - Pipeline completed in 14.08s (Turn 1/5)
+2025-11-19 17:02:41,468 - voice_agent - INFO - chat_endpoint:175 - Returning response - Session: e8386bed-b775-4aaf-8b5f-6f119abcebbe, Turn: 1, Time: 14.08s
+2025-11-19 17:02:49,338 - voice_agent - INFO - chat_endpoint:103 - Received audio file: turn2_input.wav (11.62 KB) Session: e8386bed-b775-4aaf-8b5f-6f119abcebbe
+2025-11-19 17:02:49,340 - voice_agent - INFO - save_uploaded_file:73 - Saved file: data/temp/20251119_170249_9a126beec442.wav
+2025-11-19 17:02:49,340 - voice_agent - INFO - process:69 - Starting pipeline for session: e8386bed-b775-4aaf-8b5f-6f119abcebbe
+2025-11-19 17:02:50,967 - voice_agent - INFO - transcribe:58 - Transcription successful. Language: en, Text length: 24
+2025-11-19 17:02:50,967 - voice_agent - INFO - process:86 - ASR completed: 'What's the weather like?...'
+2025-11-19 17:02:59,426 - voice_agent - INFO - generate:121 - Generated response: 892 chars, ~341 tokens
+2025-11-19 17:02:59,427 - voice_agent - INFO - process:101 - LLM completed: 'The current temperature in Fahrenheit is 78°FDMETHODC onCreateViewHolderSCRIPTORC onCreateViewHolder...'
+2025-11-19 17:03:02,187 - voice_agent - INFO - synthesize:63 - TTS synthesis successful: data/temp/20251119_170259_3417a87281ed.mp3
+2025-11-19 17:03:02,188 - voice_agent - INFO - process:110 - TTS completed: data/temp/20251119_170259_3417a87281ed.mp3
+2025-11-19 17:03:02,188 - voice_agent - INFO - process:128 - Pipeline completed in 12.85s (Turn 2/5)
+2025-11-19 17:03:02,189 - voice_agent - INFO - chat_endpoint:175 - Returning response - Session: e8386bed-b775-4aaf-8b5f-6f119abcebbe, Turn: 2, Time: 12.85s
+2025-11-19 17:03:19,797 - voice_agent - INFO - chat_endpoint:103 - Received audio file: turn3_input.wav (14.25 KB) Session: e8386bed-b775-4aaf-8b5f-6f119abcebbe
+2025-11-19 17:03:19,799 - voice_agent - INFO - save_uploaded_file:73 - Saved file: data/temp/20251119_170319_54f3fcf9e837.wav
+2025-11-19 17:03:19,799 - voice_agent - INFO - process:69 - Starting pipeline for session: e8386bed-b775-4aaf-8b5f-6f119abcebbe
+2025-11-19 17:03:21,515 - voice_agent - INFO - transcribe:58 - Transcription successful. Language: en, Text length: 23
+2025-11-19 17:03:21,515 - voice_agent - INFO - process:86 - ASR completed: 'Can you tell me a joke?...'
+2025-11-19 17:03:30,363 - voice_agent - INFO - generate:121 - Generated response: 882 chars, ~460 tokens
+2025-11-19 17:03:30,363 - voice_agent - INFO - process:101 - LLM completed: 'There was once upon a time when...DMETHODC onCreateViewHolderSCRIPTORC onCreateViewHolderSCRIPTORC o...'
+2025-11-19 17:03:32,915 - voice_agent - INFO - synthesize:63 - TTS synthesis successful: data/temp/20251119_170330_6f4e51475075.mp3
+2025-11-19 17:03:32,916 - voice_agent - INFO - process:110 - TTS completed: data/temp/20251119_170330_6f4e51475075.mp3
+2025-11-19 17:03:32,916 - voice_agent - INFO - process:128 - Pipeline completed in 13.12s (Turn 3/5)
+2025-11-19 17:03:32,916 - voice_agent - INFO - chat_endpoint:175 - Returning response - Session: e8386bed-b775-4aaf-8b5f-6f119abcebbe, Turn: 3, Time: 13.12s
+2025-11-19 17:09:22,334 - voice_agent - INFO - chat_endpoint:103 - Received audio file: turn4_input.wav (16.69 KB) Session: e8386bed-b775-4aaf-8b5f-6f119abcebbe
+2025-11-19 17:09:22,335 - voice_agent - INFO - save_uploaded_file:73 - Saved file: data/temp/20251119_170922_9d3cd27742dd.wav
+2025-11-19 17:09:22,335 - voice_agent - INFO - process:69 - Starting pipeline for session: e8386bed-b775-4aaf-8b5f-6f119abcebbe
+2025-11-19 17:09:24,266 - voice_agent - INFO - transcribe:58 - Transcription successful. Language: en, Text length: 30
+2025-11-19 17:09:24,267 - voice_agent - INFO - process:86 - ASR completed: 'What did I just ask you about?...'
+2025-11-19 17:09:34,655 - voice_agent - INFO - generate:121 - Generated response: 873 chars, ~580 tokens
+2025-11-19 17:09:34,655 - voice_agent - INFO - process:101 - LLM completed: 'What else would you like to know about me?
+BeginInitSCRIPTORC onCreateViewHolderSCRIPTORC onCreateVi...'
+2025-11-19 17:09:37,557 - voice_agent - INFO - synthesize:63 - TTS synthesis successful: data/temp/20251119_170934_93ba7272f82e.mp3
+2025-11-19 17:09:37,557 - voice_agent - INFO - process:110 - TTS completed: data/temp/20251119_170934_93ba7272f82e.mp3
+2025-11-19 17:09:37,557 - voice_agent - INFO - process:128 - Pipeline completed in 15.22s (Turn 4/5)
+2025-11-19 17:09:37,558 - voice_agent - INFO - chat_endpoint:175 - Returning response - Session: e8386bed-b775-4aaf-8b5f-6f119abcebbe, Turn: 4, Time: 15.22s
+2025-11-19 17:10:15,569 - voice_agent - INFO - chat_endpoint:103 - Received audio file: turn5_input.wav (15.19 KB) Session: e8386bed-b775-4aaf-8b5f-6f119abcebbe
+2025-11-19 17:10:15,571 - voice_agent - INFO - save_uploaded_file:73 - Saved file: data/temp/20251119_171015_3d6c128e307b.wav
+2025-11-19 17:10:15,571 - voice_agent - INFO - process:69 - Starting pipeline for session: e8386bed-b775-4aaf-8b5f-6f119abcebbe
+2025-11-19 17:10:17,472 - voice_agent - INFO - transcribe:58 - Transcription successful. Language: en, Text length: 28
+2025-11-19 17:10:17,472 - voice_agent - INFO - process:86 - ASR completed: 'Thanks for chatting with me....'
+2025-11-19 17:10:19,467 - voice_agent - INFO - generate:121 - Generated response: 0 chars, ~598 tokens
+2025-11-19 17:10:19,467 - voice_agent - INFO - process:101 - LLM completed: '...'
+2025-11-19 17:10:19,467 - voice_agent - ERROR - synthesize:72 - TTS synthesis failed: No text to speak
+2025-11-19 17:10:19,467 - voice_agent - ERROR - process:143 - Pipeline failed: No text to speak
+Traceback (most recent call last):
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/orchestrator/voice_pipeline.py", line 105, in process
+    tts_result = await self.run_in_executor(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/orchestrator/voice_pipeline.py", line 43, in run_in_executor
+    return await loop.run_in_executor(self.executor, func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/services/tts/gtts_client.py", line 47, in synthesize
+    tts = gTTS(
+          ^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/gtts/tts.py", line 128, in __init__
+    assert text, "No text to speak"
+           ^^^^
+AssertionError: No text to speak
+2025-11-19 17:10:19,471 - voice_agent - ERROR - chat_endpoint:193 - Chat endpoint error: No text to speak
+Traceback (most recent call last):
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/api/routes/chat.py", line 116, in chat_endpoint
+    response = await voice_pipeline.process(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/orchestrator/voice_pipeline.py", line 105, in process
+    tts_result = await self.run_in_executor(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/orchestrator/voice_pipeline.py", line 43, in run_in_executor
+    return await loop.run_in_executor(self.executor, func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/services/tts/gtts_client.py", line 47, in synthesize
+    tts = gTTS(
+          ^^^^^
+  File "/Users/emmawang/Library/Mobile Documents/com~apple~CloudDocs/Emma My Product/AI_Projects/VicProject1_voice-agent-simple/venv/lib/python3.12/site-packages/gtts/tts.py", line 128, in __init__
+    assert text, "No text to speak"
+           ^^^^
+AssertionError: No text to speak
+2025-11-19 17:10:19,472 - voice_agent - WARNING - http_exception_handler:13 - HTTP 500: An error occurred while processing your request.: No text to speak
+2025-11-19 17:10:46,881 - voice_agent - INFO - lifespan:44 - Shutting down application
