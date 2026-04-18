@@ -2,71 +2,46 @@
 
 ## Project Description
 
-[STUDENT: Describe your capstone project in 2-3 sentences]
+The vacation Planer will take user's request and suggest best vacation plan.
 
 ## Data Pipeline Strategy
 
-# Data Pipeline Strategy — Week 2 Capstone Review
+Based on your project goal of building a Vacation Planer that takes user requests and suggests the best vacation plans, here are some recommendations for designing a data pipeline strategy:
 
----
+1. Data Sources:
+   - Travel websites (e.g., Expedia, Booking.com) to collect information about available flights, hotels, rental cars, etc.
+   - PDF documents from travel guides, blogs, and reviews to gather insights on destinations, activities, accommodations, etc.
+   - Audio files of user conversations or voice assistants to understand natural language queries and preferences.
 
-## ⚠️ Important Notice Before We Begin
+2. Extraction Tools:
+   - Web scraping libraries (e.g., BeautifulSoup, Scrapy) for extracting data from websites.
+   - PDF parsing tools (e.g., PyPDF2, pdfplottter) for extracting text and relevant information from travel guides and documents.
+   - Speech-to-text APIs (e.g., Google Cloud Speech-to-Text, IBM Watson Speech to Text) for converting audio files into transcriptions.
 
-Your project definition fields are **all still placeholder text**. I can see:
-- Project description: `[STUDENT: Describe your capstone project...]`
-- Domain: `[STUDENT: e.g., healthcare, finance...]`
-- Problem/Solution/Components: All unfilled template text
+3. Cleaning Steps:
+   - Remove stop words and perform stemming/lemmatization on extracted text data to normalize the content.
+   - Handle missing or inconsistent data by filling in gaps or removing incomplete entries.
+   - Perform deduplication of records to ensure unique vacation plans or destinations are not repeated.
+   - Anonymize personally identifiable information (PII) such as names, addresses, etc., before storing or processing the data.
 
-**I cannot give you specific, useful pipeline advice without knowing what you're actually building.**
+4. Voice Capabilities:
+   - Integrate speech recognition APIs to allow users to interact with the Vacation Planer using voice commands.
+   - Use natural language understanding techniques to extract relevant entities and preferences from user queries (e.g., destination, dates, budget).
+   - Provide voice feedback for suggested vacation plans or recommendations.
 
-Giving you generic advice here would waste your time and produce a pipeline that may be completely wrong for your use case.
+5. Data Volume and Processing Time:
+   - The data volume will depend on the scale of your project. Start with a smaller dataset and gradually expand as needed.
+   - Consider using cloud-based storage solutions like Google Cloud Storage or Amazon S3 to store large amounts of text, PDFs, and audio files.
+   - Optimize processing time by parallelizing tasks, using efficient data structures, and leveraging distributed computing frameworks if required.
 
----
+6. Additional Considerations:
+   - Implement a user authentication system to securely access the Vacation Planer's features.
+   - Use version control (e.g., Git) to track changes in your codebase and collaborate with others.
+   - Set up monitoring and logging mechanisms to capture errors, exceptions, and important events during runtime.
 
-## What You Need To Do Right Now
+Remember to prioritize data privacy and security throughout the pipeline. Ensure that user information is handled securely and comply with relevant regulations such as GDPR or CCPA.
 
-**Fill in your project definition with real content.** Here's a concrete example of what good vs. bad input looks like:
-
-| ❌ What you submitted | ✅ What I need |
-|---|---|
-| `[Your project name]` | "Legal Brief Summarization Agent" |
-| `[What research problem are you solving?]` | "Law students can't quickly extract key arguments from 200-page case files" |
-| `[How will your agent solve this?]` | "RAG pipeline over uploaded PDFs with citation-aware summarization" |
-
----
-
-## Once You Fill Those In, Here's What I'll Design For You
-
-### 1. 📥 Data Sources
-I'll recommend specific sources based on your domain — for example:
-- **Healthcare** → PubMed, clinical PDFs, patient intake audio
-- **Finance** → SEC filings, earnings call transcripts, news feeds
-- **Education** → Course syllabi, lecture recordings, textbook PDFs
-- **Legal** → Court opinions, regulatory documents, deposition audio
-
-### 2. 🔧 Extraction Tool Selection
-I'll match tools to your actual content types:
-```
-PDFs with complex layouts  → Marker or Docling (not Tesseract)
-Scanned/image PDFs         → Tesseract + preprocessing
-Web articles               → Trafilatura (cleaner) or Crawl4AI (JS-heavy sites)
-Audio/video recordings     → faster-whisper (specify model size based on volume)
-```
-
-### 3. 🧹 Cleaning Pipeline Priority
-Different domains have **critically different cleaning needs**:
-- **Medical** → PII removal is legally mandatory (HIPAA)
-- **Legal** → Citation preservation, must NOT strip formatting
-- **General research** → MinHash dedup is highest priority
-- **Audio-sourced** → Disfluency removal ("um", "uh") before indexing
-
-### 4. 🎙️ Voice Capability Decision
-This depends entirely on your user workflow — which you haven't described yet. Key questions I'd answer:
-- Is your user interacting hands-free? → Pipecat pipeline
-- Are outputs being consumed while doing other tasks? → edge-tts or Kokoro
-- Is voice just a nice-to-have? → Skip it, focus on core pipeline first
-
-### 5. 📊 Volume & Processing
+As you progress through the project, continuously evaluate and iterate on your data pipeline based on feedback from users and changing requirements. Regularly monitor performance metrics like processing time, error rates, and data quality to ensure a smooth user experience.
 
 ## Mini Pipeline Results
 
@@ -77,13 +52,19 @@ This depends entirely on your user workflow — which you haven't described yet.
 
 ### Data Strategy
 [YOUR REFLECTION HERE]
-
+Web sites like TripAdvisor, Lonely Planet, and some travel agency's brouchures in PDF format would be great data sources for travel recommendations. For web scraping, I would use Trafilatura for its robustness in extracting content from complex web pages, and for PDFs
+I might use docling for docuements collect, and trafilatura for web crawling. 
+I will also use data cleaning pipelines to pre access  data.
+OCR quality might be an issue for scanned brochures, so I will need to experiment with Tesseract and Marker to see which gives better results.
 - Which data sources are most relevant for your project?
 - Which tools from this week will you actually use in your capstone?
 - What's the most challenging data quality issue you expect to face?
 
 ### Pipeline Execution
 [YOUR REFLECTION HERE]
+I  cloolect data for Prgramming language in AI era.
+No documents were removed by the pipeline. I guess the data is clean enough for my use case.
+Scaling to a full dataset would involve automating the scraping process to run on a schedule, and using cloud storage and processing (e.g., AWS S3 + Lambda) to handle larger volumes of data. I would also implement monitoring to track data quality and pipeline performance.    
 
 - What data did you collect and how did you clean it?
 - Were any documents removed by the pipeline? Why?

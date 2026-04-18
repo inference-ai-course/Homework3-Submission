@@ -1,141 +1,108 @@
 [
   {
-    "title": "Your Pre-trained Diffusion Model Secretly Knows Restoration",
-    "abstract": "Pre-trained diffusion models have enabled significant advancements in All-in-One Restoration (AiOR), offering improved perceptual quality and generalization. However, diffusion-based restoration methods primarily rely on fine-tuning or Control-Net style modules to leverage the pre-trained diffusion model's priors for AiOR. In this work, we show that these pre-trained diffusion models inherently possess restoration behavior, which can be unlocked by directly learning prompt embeddings at the output of the text encoder. Interestingly, this behavior is largely inaccessible through text prompts and text-token embedding optimization. Furthermore, we observe that naive prompt learning is unstable because the forward noising process using degraded images is misaligned with the reverse sampling trajectory. To resolve this, we train prompts within a diffusion bridge formulation that aligns training and inference dynamics, enforcing a coherent denoising path from noisy degraded states to clean images. Building on these insights, we introduce our lightweight learned prompts on the pre-trained WAN video model and FLUX image models, converting them into high-performing restoration models. Extensive experiments demonstrate that our approach achieves competitive performance and generalization across diverse degradations, while avoiding fine-tuning and restoration-specific control modules.",
-    "url": "http://arxiv.org/abs/2604.04924v1",
+    "title": "RAD-2: Scaling Reinforcement Learning in a Generator-Discriminator Framework",
+    "abstract": "High-level autonomous driving requires motion planners capable of modeling multimodal future uncertainties while remaining robust in closed-loop interactions. Although diffusion-based planners are effective at modeling complex trajectory distributions, they often suffer from stochastic instabilities and the lack of corrective negative feedback when trained purely with imitation learning. To address these issues, we propose RAD-2, a unified generator-discriminator framework for closed-loop planning. Specifically, a diffusion-based generator is used to produce diverse trajectory candidates, while an RL-optimized discriminator reranks these candidates according to their long-term driving quality. This decoupled design avoids directly applying sparse scalar rewards to the full high-dimensional trajectory space, thereby improving optimization stability. To further enhance reinforcement learning, we introduce Temporally Consistent Group Relative Policy Optimization, which exploits temporal coherence to alleviate the credit assignment problem. In addition, we propose On-policy Generator Optimization, which converts closed-loop feedback into structured longitudinal optimization signals and progressively shifts the generator toward high-reward trajectory manifolds. To support efficient large-scale training, we introduce BEV-Warp, a high-throughput simulation environment that performs closed-loop evaluation directly in Bird's-Eye View feature space via spatial warping. RAD-2 reduces the collision rate by 56% compared with strong diffusion-based planners. Real-world deployment further demonstrates improved perceived safety and driving smoothness in complex urban traffic.",
+    "url": "http://arxiv.org/abs/2604.15308v1",
     "authors": [
-      "Sudarshan Rajagopalan",
-      "Vishal M. Patel"
+      "Hao Gao",
+      "Shaoyu Chen",
+      "Yifan Zhu",
+      "Yuehao Song",
+      "Wenyu Liu",
+      "Qian Zhang",
+      "Xinggang Wang"
     ]
   },
   {
-    "title": "How AI Aggregation Affects Knowledge",
-    "abstract": "Artificial intelligence (AI) changes social learning when aggregated outputs become training data for future predictions. To study this, we extend the DeGroot model by introducing an AI aggregator that trains on population beliefs and feeds synthesized signals back to agents. We define the learning gap as the deviation of long-run beliefs from the efficient benchmark, allowing us to capture how AI aggregation affects learning. Our main result identifies a threshold in the speed of updating: when the aggregator updates too quickly, there is no positive-measure set of training weights that robustly improves learning across a broad class of environments, whereas such weights exist when updating is sufficiently slow. We then compare global and local architectures. Local aggregators trained on proximate or topic-specific data robustly improve learning in all environments. Consequently, replacing specialized local aggregators with a single global aggregator worsens learning in at least one dimension of the state.",
-    "url": "http://arxiv.org/abs/2604.04906v1",
+    "title": "Pure Borrow: Linear Haskell Meets Rust-Style Borrowing",
+    "abstract": "A promising approach to unifying functional and imperative programming paradigms is to localize mutation using linear or affine types. Haskell, a purely functional language, was recently extended with linear types by Bernardy et al., named Linear Haskell. However, it remained unknown whether such a pure language could safely support non-local \\emph{borrowing} in the style of Rust, where each borrower can be freely split and dropped without direct communication of ownership back to the lender.   We answer this question affirmatively by \\emph{Pure Borrow}, a novel framework that realizes Rust-style borrowing in Linear Haskell with purity. Notably, it features parallel state mutation with affine mutable references inside pure computation, unlike the IO and ST monads and existing Linear Haskell APIs. It also enjoys purity, lazy evaluation, first-class polymorphism and leak freedom, unlike Rust. We implement Pure Borrow simply as a library in Linear Haskell and demonstrate its power with a case study in parallel computing. We formalize the core of Pure Borrow and build a metatheory that works toward establishing safety, leak freedom and confluence, with a new, history-based model of borrowing.",
+    "url": "http://arxiv.org/abs/2604.15290v1",
     "authors": [
-      "Daron Acemoglu",
-      "Tianyi Lin",
-      "Asuman Ozdaglar",
-      "James Siderius"
+      "Yusuke Matsushita",
+      "Hiromi Ishii"
     ]
   },
   {
-    "title": "Connection between the contextuality breaking and incompatibility breaking qubit channels",
-    "abstract": "Contextuality and measurement incompatibility are two fundamental aspects of nonclassicality, and their manifestations in observed quantum correlations are often deeply interconnected. Recently, measurement incompatibility has been studied in connection with nonlocality, particularly in terms of their robustness under various quantum channels. This line of investigation helps establish a connection between the channels that break nonlocality and those that break incompatibility. In this study, we focus on an asymmetric bipartite Bell scenario involving three and four inputs on Alice and Bob sides, respectively, with each of these inputs having dichotomous outcomes. Under the assumption of locality, the observed statistics in this asymmetric scenario obeys the Elegant Bell inequality (EBI). Here, we use a different version of the EBI that relies on the assumption of the preparation noncontextuality. By taking the violation of this noncontextual version of EBI as a witness of preparation contextuality we establish a connection between the channels that break contextuality and the channels that break triple-wise measurement incompatibility. Our results suggest that any channel which breaks EBI contextuality will also break Clauser-Horne-Shimony-Holt (CHSH) nonlocality; however, the reverse does not hold. We also show that a depolarising channel that breaks N-wise incompatibility can also break a certain form of contextuality, witnessed by a generalised inequality involving N measurements on one wing of a bipartite Bell scenario.",
-    "url": "http://arxiv.org/abs/2604.04899v1",
+    "title": "CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas",
+    "abstract": "It is increasingly important that LLM agents interact effectively and safely with other goal-pursuing agents, yet, recent works report the opposite trend: LLMs with stronger reasoning capabilities behave _less_ cooperatively in mixed-motive games such as the prisoner's dilemma and public goods settings. Indeed, our experiments show that recent models -- with or without reasoning enabled -- consistently defect in single-shot social dilemmas.   To tackle this safety concern, we present the first comparative study of game-theoretic mechanisms that are designed to enable cooperative outcomes between rational agents _in equilibrium_. Across four social dilemmas testing distinct components of robust cooperation, we evaluate the following mechanisms: (1) repeating the game for many rounds, (2) reputation systems, (3) third-party mediators to delegate decision making to, and (4) contract agreements for outcome-conditional payments between players. Among our findings, we establish that contracting and mediation are most effective in achieving cooperative outcomes between capable LLM models, and that repetition-induced cooperation deteriorates drastically when co-players vary. Moreover, we demonstrate that these cooperation mechanisms become _more effective_ under evolutionary pressures to maximize individual payoffs.",
+    "url": "http://arxiv.org/abs/2604.15267v1",
     "authors": [
-      "Swati Kumari",
-      "Sumit Mukherjee",
-      "R. Prabhu"
+      "Emanuel Tewolde",
+      "Xiao Zhang",
+      "David Guzman Piedrahita",
+      "Vincent Conitzer",
+      "Zhijing Jin"
     ]
   },
   {
-    "title": "Topological surface states revealed by the Zeeman effect in superconducting UTe2",
-    "abstract": "Intrinsic topological superconductors with protected boundary modes obeying non-Abelian statistics constitute a vanishingly small class of quantum materials. A defining spectroscopic signature of such phases is the presence of in-gap topological surface states (TSS). However, despite extensive theoretical proposals, their unambiguous experimental identification has remained elusive. Here we use vector magnetic-field scanning tunnelling microscopy to obtain direct spectroscopic evidence of TSS in the spin-triplet superconductor UTe2. Atomic-scale spectroscopy reveals striking site-dependent superconductivity: Te sites host a large in-gap density of states that nearly fills the superconducting gap, whereas neighboring atomic sites remain gapped. Upon application of a magnetic field, the in-gap states on the Te sites are selectively suppressed, yielding a spatially homogeneous superconducting state with a markedly deeper gap relative to zero field. This site-selective gap evolution is in quantitative agreement with theoretical predictions for TSS in UTe2 that possess dominant Te-orbital character. Spectral-function calculations incorporating the Zeeman coupling reproduce the observed magnetic-field response. Our results provide a spectroscopic fingerprint of the long-sought TSS in superconductors and establish UTe2 as a compelling system for exploring intrinsic topological superconductivity.",
-    "url": "http://arxiv.org/abs/2604.04883v1",
+    "title": "Simplifying Safety Proofs with Forward-Backward Reasoning and Prophecy",
+    "abstract": "We propose an incremental approach for safety proofs that decomposes a proof with a complex inductive invariant into a sequence of simpler proof steps. Our proof system combines rules for (i) forward reasoning using inductive invariants, (ii) backward reasoning using inductive invariants of a time-reversed system, and (iii) prophecy steps that add witnesses for existentially quantified properties. We prove each rule sound and give a construction that recovers a single safe inductive invariant from an incremental proof. The construction of the invariant demonstrates the increased complexity of a single inductive invariant compared to the invariant formulas used in an incremental proof, which may have simpler Boolean structures and fewer quantifiers and quantifier alternations. Under natural restrictions on the available invariant formulas, each proof rule strictly increases proof power. That is, each rule allows to prove more safety problems with the same set of formulas. Thus, the incremental approach is able to reduce the search space of invariant formulas needed to prove safety of a given system. A case study on Paxos, several of its variants, and Raft demonstrates that forward-backward steps can remove complex Boolean structure while prophecy eliminates quantifiers and quantifier alternations.",
+    "url": "http://arxiv.org/abs/2604.15266v1",
     "authors": [
-      "Zhen Zhu",
-      "Hans Christiansen",
-      "Yudi Huang",
-      "Kaiming Liu",
-      "Zheyu Wu",
-      "Shanta R. Saha",
-      "Johnpierre Paglione",
-      "Alexander G. Eaton",
-      "Andrej Cabala",
-      "Michal Vališka",
-      "Rafael M. Fernandes",
-      "Andreas Kreisel",
-      "Brian M. Andersen",
-      "Vidya Madhavan"
+      "Eden Frenkel",
+      "Kenneth L. McMillan",
+      "Oded Padon",
+      "Sharon Shoham"
     ]
   },
   {
-    "title": "Boltzmann-Loschmidt dispute reloaded quantum 150 years later",
-    "abstract": "The Boltzmann-Loschmidt dispute of 1876 questioned the possibility of a statistical irreversible description by time reversible classical equations of motion of atoms. Here we show analytically and numerically that the quantum chaos diffusion of cold atoms, or ions, in a harmonic trap and pulsed optical lattice can be inverted back in time with up to 100\\% efficiency. This is in sharp contrast to classical evolution where exponentially small errors break time reversibility. We argue that the existing experimental skills allow highlighting the Boltzmann-Loschmidt dispute from a quantum perspective.",
-    "url": "http://arxiv.org/abs/2604.04879v1",
+    "title": "Goxpyriment: A Go Framework for Behavioral and Cognitive Experiments",
+    "abstract": "We introduce `Goxpyriment', a new open-source software framework for programming behavioral and cognitive experiments using the Go programming language. The library is designed to address some limitations of existing Python-based experiment tools, particularly the runtime environment complexity that frequently complicates deployment across laboratories. Because Go is a compiled language that can natively embed assets (e.g., graphics, audio files, and stimulus lists), Goxpyriment compiles entire experiments into single, self-contained executable binaries with zero runtime dependencies. This drastically simplifies distribution to collaborators and testing computers. The programming interface, inspired by Expyriment (Krause & Lindemann, 2014), was designed to be human friendly. The library includes an array of visual stimuli (text, shapes, images, Gabor patches, motion clouds, ...) and audio capabilities (WAV playback and tone generation). While developing Goxpyriment, we focused on timing reliability. Input events are timestamped by the operating system at hardware-interrupt time, so reaction times are computed by subtracting two OS-level timestamps rather than relying on continuous polling. Go's garbage collector can be disabled, greatly reducing the probability of unpredictable pauses that could corrupt stimulus timing. Finally, a set of over forty psychology experiments implemented in Goxpyriment are provided that promote not only learning by humans but also improve the ability of modern AI-assisted coding tools to help program experiments. The framework is released under the   GNU General Public License v3 and is freely available at https://github.com/chrplr/goxpyriment.",
+    "url": "http://arxiv.org/abs/2604.15245v1",
     "authors": [
-      "Leonardo Ermann",
-      "Alexei D. Chepelianskii",
-      "Dima L. Shepelyansky"
+      "Christophe Pallier",
+      "Julie Bonnaire",
+      "Marie-France Fourcade"
     ]
   },
   {
-    "title": "Driving Quantum Heat Engines Beyond Classical Limits through Multilevel Coherence",
-    "abstract": "Quantum coherence provides a controllable thermodynamic resource that can raise or lower the effective temperature of a cavity mode, enabling efficiency tuning in quantum heat engines. Here, we derive analytic expressions for the effective engine temperature, demonstrating the enhanced temperature tunability achievable via $N$-level ground-state coherence. We further unify ground- and excited-state coherence within a single analytic framework, revealing their interplay as a mechanism for thermodynamic control. Such quantum resources serve as tunable parameters that enable switching between heating, cooling, and cancellation regimes, driving the effective temperature from near-zero to divergence. Ultimately, our framework connects and generalizes previous models of quantum heat engines, and we identify rubidium atoms as a promising candidate for experimentally realizing these coherence-assisted effects.",
-    "url": "http://arxiv.org/abs/2604.04873v1",
+    "title": "TokenGS: Decoupling 3D Gaussian Prediction from Pixels with Learnable Tokens",
+    "abstract": "In this work, we revisit several key design choices of modern Transformer-based approaches for feed-forward 3D Gaussian Splatting (3DGS) prediction. We argue that the common practice of regressing Gaussian means as depths along camera rays is suboptimal, and instead propose to directly regress 3D mean coordinates using only a self-supervised rendering loss. This formulation allows us to move from the standard encoder-only design to an encoder-decoder architecture with learnable Gaussian tokens, thereby unbinding the number of predicted primitives from input image resolution and number of views. Our resulting method, TokenGS, demonstrates improved robustness to pose noise and multiview inconsistencies, while naturally supporting efficient test-time optimization in token space without degrading learned priors. TokenGS achieves state-of-the-art feed-forward reconstruction performance on both static and dynamic scenes, producing more regularized geometry and more balanced 3DGS distribution, while seamlessly recovering emergent scene attributes such as static-dynamic decomposition and scene flow.",
+    "url": "http://arxiv.org/abs/2604.15239v1",
     "authors": [
-      "Hui Wang",
-      "Yusef Maleki",
-      "William J. Munro",
-      "Marlan O. Scully"
+      "Jiawei Ren",
+      "Michal Jan Tyszkiewicz",
+      "Jiahui Huang",
+      "Zan Gojcic"
     ]
   },
   {
-    "title": "Measurement of the galaxy-velocity power spectrum of DESI tracers with the kinematic Sunyaev-Zeldovich effect using DESI DR2 and ACT DR6",
-    "abstract": "Joint analyses of high-resolution CMB temperature maps with galaxy surveys provide a unique way to reconstruct the radial velocity field of the underlying matter distribution via the kinematic Sunyaev-Zeldovich (kSZ) effect. Using data from the Atacama Cosmology Telescope (ACT) DR6 and the Dark Energy Spectroscopic Instrument (DESI) DR2, we present radial velocity reconstructions for luminous red galaxies (LRGs), emission-line galaxies (ELGs), and quasars (QSOs). Leveraging the spectroscopic data, we are able to reliably model the foreground contamination and report a negligible impact on our main observables. We detect the velocity-galaxy cross-correlation at $17.0σ$ for LRGs, and for the first time, at $8.3σ$ for ELGs and $6.8σ$ for QSOs. We further report the first detection of the velocity-velocity correlation using LRGs at $3.1σ$, as well as the highest cumulative detection of the kSZ effect to date at $20.8 σ$. Similarly to previous results, we find a lower amplitude of the kSZ signal compared to our fiducial halo model prediction and electron profile assuming a Battaglia profile. Combining these new observables, we obtain constraints on local-type primordial non-Gaussianity (PNG): $f_{\\rm NL}^{\\rm loc} = 15.9_{-34.4}^{+34.6}$ at 68\\% confidence, which represents the tightest constraint to date derived from the velocity field. The measurements presented here already exhibit lower noise on a per-mode basis than the galaxy auto-correlation on the largest scales, $k<0.004~\\rm{Mpc^{-1}}$, highlighting the key role these observables will play in the context of future CMB experiments such as the Simons Observatory.",
-    "url": "http://arxiv.org/abs/2604.04867v1",
+    "title": "Agentic Microphysics: A Manifesto for Generative AI Safety",
+    "abstract": "This paper advances a methodological proposal for safety research in agentic AI. As systems acquire planning, memory, tool use, persistent identity, and sustained interaction, safety can no longer be analysed primarily at the level of the isolated model. Population-level risks arise from structured interaction among agents, through processes of communication, observation, and mutual influence that shape collective behaviour over time. As the object of analysis shifts, a methodological gap emerges. Approaches focused either on single agents or on aggregate outcomes do not identify the interaction-level mechanisms that generate collective risks or the design variables that control them. A framework is required that links local interaction structure to population-level dynamics in a causally explicit way, allowing both explanation and intervention. We introduce two linked concepts. Agentic microphysics defines the level of analysis: local interaction dynamics where one agent's output becomes another's input under specific protocol conditions. Generative safety defines the methodology: growing phenomena and elicit risks from micro-level conditions to identify sufficient mechanisms, detect thresholds, and design effective interventions.",
+    "url": "http://arxiv.org/abs/2604.15236v1",
     "authors": [
-      "Edmond Chaussidon",
-      "Selim C. Hotinli",
-      "Simone Ferraro",
-      "Kendrick Smith",
-      "Xinyi Chen",
-      "J. Aguilar",
-      "S. Ahlen",
-      "D. Bianchi",
-      "D. Brooks",
-      "T. Claybaugh",
-      "A. Cuceu",
-      "A. de la Macorra",
-      "B. Dey",
-      "P. Doel",
-      "A. Font-Ribera",
-      "J. E. Forero-Romero",
-      "E. Gaztañaga",
-      "S. Gontcho A Gontcho",
-      "G. Gutierrez",
-      "J. Guy",
-      "H. K. Herrera-Alcantar",
-      "K. Honscheid",
-      "C. Howlett",
-      "D. Huterer",
-      "M. Ishak",
-      "R. Joyce",
-      "D. Kirkby",
-      "A. Kremin",
-      "O. Lahav",
-      "M. Landriau",
-      "L. Le Guillou",
-      "M. Manera",
-      "A. Meisner",
-      "R. Miquel",
-      "S. Nadathur",
-      "J. A. Newman",
-      "N. Palanque-Delabrouille",
-      "W. J. Percival",
-      "F. Prada",
-      "I. Pérez-Ràfols",
-      "G. Rossi",
-      "L. Samushia",
-      "E. Sanchez",
-      "D. Schlegel",
-      "M. Schubnell",
-      "H. Seo",
-      "J. Silber",
-      "D. Sprayberry",
-      "G. Tarlé",
-      "B. A. Weaver",
-      "C. Yèche",
-      "R. Zhou"
+      "Federico Pierucci",
+      "Matteo Prandi",
+      "Marcantonio Bracale Syrnikov",
+      "Marcello Galisai",
+      "Piercosma Bisconti"
     ]
   },
   {
-    "title": "Failure of the strong feasible disjunction property",
-    "abstract": "A propositional proof system $P$ has the strong feasible disjunction property iff there is a constant $c \\geq 1$ such that whenever $P$ admits a size $s$ proof of $\\bigvee_i α_i$ with no two $α_i$ sharing an atom then one of $α_i$ has a $P$-proof of size $\\le s^c$.   It was proved by K. (2025) that no proof system strong enough admits this property assuming a computational complexity conjecture and a conjecture about proof complexity generators. Here we build on Ilango (2025) and Ren et al. (2025) and prove the same result under two purely computational complexity hypotheses:   - there exists a language in class E that requires exponential size circuits even if they are allowed to query an NP oracle,   - there exists a P/poly demi-bit in the sense of Rudich (1997).",
-    "url": "http://arxiv.org/abs/2604.04830v1",
+    "title": "Blue Data Intelligence Layer: Streaming Data and Agents for Multi-source Multi-modal Data-Centric Applications",
+    "abstract": "NL2SQL systems aim to address the growing need for natural language interaction with data. However, real-world information rarely maps to a single SQL query because (1) users express queries iteratively (2) questions often span multiple data sources beyond the closed-world assumption of a single database, and (3) queries frequently rely on commonsense or external knowledge. Consequently, satisfying realistic data needs require integrating heterogeneous sources, modalities, and contextual data. In this paper, we present Blue's Data Intelligence Layer (DIL) designed to support multi-source, multi-modal, and data-centric applications. Blue is a compound AI system that orchestrates agents and data for enterprise settings. DIL serves as the data intelligence layer for agentic data processing, to bridge the semantic gap between user intent and available information by unifying structured enterprise data, world knowledge accessible through LLMs, and personal context obtained through interaction. At the core of DIL is a data registry that stores metadata for diverse data sources and modalities to enable both native and natural language queries. DIL treats LLMs, the Web, and the User as source 'databases', each with their own query interface, elevating them to first-class data sources. DIL relies on data planners to transform user queries into executable query plans. These plans are declarative abstractions that unify relational operators with other operators spanning multiple modalities. DIL planners support decomposition of complex requests into subqueries, retrieval from diverse sources, and finally reasoning and integration to produce final results. We demonstrate DIL through two interactive scenarios in which user queries dynamically trigger multi-source retrieval, cross-modal reasoning, and result synthesis, illustrating how compound AI systems can move beyond single database NL2SQL.",
+    "url": "http://arxiv.org/abs/2604.15233v1",
     "authors": [
-      "Jan Krajicek"
+      "Moin Aminnaseri",
+      "Farima Fatahi Bayat",
+      "Nikita Bhutani",
+      "Jean-Flavien Bussotti",
+      "Kevin Chan",
+      "Rafael Li Chen",
+      "Yanlin Feng",
+      "Jackson Hassell",
+      "Estevam Hruschka",
+      "Eser Kandogan",
+      "Hannah Kim",
+      "James Levine",
+      "Seiji Maekawa",
+      "Jalal Mahmud",
+      "Kushan Mitra",
+      "Naoki Otani",
+      "Pouya Pezeshkpour",
+      "Nima Shahbazi",
+      "Chen Shen",
+      "Dan Zhang"
     ]
   }
 ]

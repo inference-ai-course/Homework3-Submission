@@ -67,7 +67,7 @@ class LLMClient:
                 if self.DEFAULT_OLLAMA_MODEL in model_names:
                     self.default_model = self.DEFAULT_OLLAMA_MODEL
                 elif models:
-                    self.default_model = models[0]['name']
+                    self.default_model = models[4]['name']
                 else:
                     print("⚠ Ollama running but no models found")
                     print(f"  Run: ollama pull {self.DEFAULT_OLLAMA_MODEL}")
