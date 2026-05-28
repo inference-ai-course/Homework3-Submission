@@ -2,71 +2,83 @@
 
 ## Project Description
 
-[STUDENT: Describe your capstone project in 2-3 sentences]
+I just started a capstone project where I'm building a semiconductor focus application that helps engineers quickly find relevant information from technical documents, research papers, and web sources. The goal is to create a tool that can extract key insights, summarize findings, and provide voice-based interactions for users who are on the go.
 
 ## Data Pipeline Strategy
 
-# Data Pipeline Strategy â€” Week 2 Capstone Review
+# Data Pipeline Strategy: Semiconductor Intelligence Tool
+
+## Executive Summary
+
+You're building a **Retrieval-Augmented Generation (RAG) system** specialized for semiconductor engineering. Your pipeline needs to handle highly technical content with precise terminology, equations, and structured data (tables, figures, specs). Here's a concrete, buildable strategy.
 
 ---
 
-## âš ï¸ Important Notice Before We Begin
+## 1. Data Sources
 
-Your project definition fields are **all still placeholder text**. I can see:
-- Project description: `[STUDENT: Describe your capstone project...]`
-- Domain: `[STUDENT: e.g., healthcare, finance...]`
-- Problem/Solution/Components: All unfilled template text
+### Primary Sources (High Priority)
 
-**I cannot give you specific, useful pipeline advice without knowing what you're actually building.**
-
-Giving you generic advice here would waste your time and produce a pipeline that may be completely wrong for your use case.
-
----
-
-## What You Need To Do Right Now
-
-**Fill in your project definition with real content.** Here's a concrete example of what good vs. bad input looks like:
-
-| âŒ What you submitted | âœ… What I need |
-|---|---|
-| `[Your project name]` | "Legal Brief Summarization Agent" |
-| `[What research problem are you solving?]` | "Law students can't quickly extract key arguments from 200-page case files" |
-| `[How will your agent solve this?]` | "RAG pipeline over uploaded PDFs with citation-aware summarization" |
-
----
-
-## Once You Fill Those In, Here's What I'll Design For You
-
-### 1. ðŸ“¥ Data Sources
-I'll recommend specific sources based on your domain â€” for example:
-- **Healthcare** â†’ PubMed, clinical PDFs, patient intake audio
-- **Finance** â†’ SEC filings, earnings call transcripts, news feeds
-- **Education** â†’ Course syllabi, lecture recordings, textbook PDFs
-- **Legal** â†’ Court opinions, regulatory documents, deposition audio
-
-### 2. ðŸ”§ Extraction Tool Selection
-I'll match tools to your actual content types:
 ```
-PDFs with complex layouts  â†’ Marker or Docling (not Tesseract)
-Scanned/image PDFs         â†’ Tesseract + preprocessing
-Web articles               â†’ Trafilatura (cleaner) or Crawl4AI (JS-heavy sites)
-Audio/video recordings     â†’ faster-whisper (specify model size based on volume)
+Semiconductor Knowledge Base
+¢u¢w¢w Technical PDFs
+¢x   ¢u¢w¢w Datasheets (Texas Instruments, Infineon, STMicro portals)
+¢x   ¢u¢w¢w Application Notes (vendor websites)
+¢x   ¢u¢w¢w IEEE Xplore papers (if licensed) or arXiv EE section
+¢x   ¢|¢w¢w JEDEC/IEC standards documents
+¢x
+¢u¢w¢w Web Sources
+¢x   ¢u¢w¢w Electronics Stack Exchange (Q&A gold mine)
+¢x   ¢u¢w¢w SemiWiki.com (industry blog/forum)
+¢x   ¢u¢w¢w EETimes.com (news + technical articles)
+¢x   ¢u¢w¢w Vendor documentation sites (TI.com/docs, Microchip docs)
+¢x   ¢|¢w¢w Wikipedia semiconductor category (baseline concepts)
+¢x
+¢|¢w¢w Audio/Video (Optional Phase 2)
+    ¢u¢w¢w Conference talks (ISSCC, Hot Chips on YouTube)
+    ¢|¢w¢w Vendor webinars
 ```
 
-### 3. ðŸ§¹ Cleaning Pipeline Priority
-Different domains have **critically different cleaning needs**:
-- **Medical** â†’ PII removal is legally mandatory (HIPAA)
-- **Legal** â†’ Citation preservation, must NOT strip formatting
-- **General research** â†’ MinHash dedup is highest priority
-- **Audio-sourced** â†’ Disfluency removal ("um", "uh") before indexing
+### Why These Sources Specifically
+- **Datasheets** = dense, structured, domain-specific ground truth
+- **App Notes** = practical engineering context, real use cases
+- **Stack Exchange** = natural language Q&A pairs (perfect for RAG training data)
+- **arXiv cs.AR + eess.SP** = free, current research without paywalls
 
-### 4. ðŸŽ™ï¸ Voice Capability Decision
-This depends entirely on your user workflow â€” which you haven't described yet. Key questions I'd answer:
-- Is your user interacting hands-free? â†’ Pipecat pipeline
-- Are outputs being consumed while doing other tasks? â†’ edge-tts or Kokoro
-- Is voice just a nice-to-have? â†’ Skip it, focus on core pipeline first
+---
 
-### 5. ðŸ“Š Volume & Processing
+## 2. Extraction Tools by Content Type
+
+### Decision Matrix
+
+```
+Content Type          Tool              Why This Choice
+¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w¢w
+Clean web articles    trafilatura       Fast, removes boilerplate well
+JavaScript-heavy      Crawl4AI          Handles dynamic vendor portals
+Simple PDFs           PyMuPDF (fitz)    Fastest, preserves structure
+Complex PDFs          Docling           Best for tables + equations
+Scanned datasheets    Marker            Better than Tesseract for tech docs
+Audio transcription   faster-whisper    Local, accurate on technical terms
+```
+
+### Concrete Tool Configuration
+
+```python
+# PDF extraction pipeline - use tiered approach
+import fitz  # PyMuPDF
+from docling.document_converter import DocumentConverter
+
+def extract_pdf(filepath: str) -> dict:
+    """
+    Tier 1: Try PyMuPDF first (fast)
+    Tier 2: Fall back to Docling if tables/figures detected
+    """
+    doc = fitz.open(filepath)
+    
+    # Heuristic: check if document has complex layout
+    has_tables = any(
+        len(page.find_tables().tables) > 0 
+        for page in doc
 
 ## Mini Pipeline Results
 
@@ -79,20 +91,26 @@ This depends entirely on your user workflow â€” which you haven't described yet.
 [YOUR REFLECTION HERE]
 
 - Which data sources are most relevant for your project?
+- I think the most useful extraction tools for my domain will be web scraping for technical documents and research papers like IEEE, and OCR for any scanned PDFs. ASR might be less critical unless I want to include audio sources.
 - Which tools from this week will you actually use in your capstone?
+- I think I'll primarily use trafilatura for web scraping, Tesseract for OCR, and MinHash for deduplication. I might experiment with faster-whisper for ASR if I find relevant audio content.
 - What's the most challenging data quality issue you expect to face?
+- I anticipate that a major data quality issue will be dealing with noisy and unstructured data from web sources. Ensuring that I can extract clean, relevant information without too much irrelevant content will be a challenge.
 
 ### Pipeline Execution
 [YOUR REFLECTION HERE]
 
 - What data did you collect and how did you clean it?
+- I collected abstracts of research papers related to semiconductor manufacturing from arXiv. I then ran a cleaning pipeline that included language detection, deduplication using MinHash, and quality filtering to remove any low-quality or irrelevant abstracts.
 - Were any documents removed by the pipeline? Why?
+- No documents were removed during the quality filtering step due to low relevance or poor text quality.
 - How would you scale this to a full dataset for your project?
+- To scale this to a full dataset, I would set up an automated pipeline that continuously scrapes new papers from relevant sources like arXiv, IEEE, and other research databases. I would also implement more robust error handling and monitoring to ensure the pipeline runs smoothly. Additionally, I might consider parallelizing the scraping and cleaning processes to handle larger volumes of data more efficiently.
 
 ## Tools I Plan to Use
 
-[STUDENT: List the specific tools from Week 3 you'll use in your capstone]
+Trafilatura, Tesseract, MinHash, and possibly faster-whisper for ASR.
 
 ## Next Steps
 
-[STUDENT: What will you build next week with RAG and vector databases?]
+I will continue refining my data pipeline, potentially adding more sources and improving the cleaning steps. I also want to start exploring how to integrate voice capabilities into my project, perhaps by prototyping a simple voice agent using Pipecat.
