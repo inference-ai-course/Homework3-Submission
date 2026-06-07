@@ -96,13 +96,39 @@ def extract_with_crawl4ai(url: str) -> Dict[str, Any]:
                     result = await crawler.arun(url=url)
                     return result.markdown if result.success else ""
 
+            async def _crawl():
+                async with AsyncWebCrawler() as crawler:
+                    result = await crawler.arun(url=url)
+                    return result.markdown if result.success else ""
+
+            def _run_in_new_thread():
+                """
+                Spawn a brand-new ProactorEventLoop in a worker thread.
+                This sidesteps any existing SelectorEventLoop in the main thread
+                (common in Jupyter and Windows Store Python).
+                """
+                if sys.platform == "win32":
+                    loop = asyncio.ProactorEventLoop()   # ← explicit, not just policy
+                else:
+                    loop = asyncio.new_event_loop()
+                asyncio.set_event_loop(loop)
+                try:
+                    return loop.run_until_complete(_crawl())
+                finally:
+                    loop.close()
+
+            import concurrent.futures
+
             try:
-                loop = asyncio.get_running_loop()
-                import nest_asyncio
-                nest_asyncio.apply()
-                text = loop.run_until_complete(_crawl())
+                asyncio.get_running_loop()
+                # ── Already inside a running loop (Jupyter / async context) ──
+                # Can't call asyncio.run() here, so delegate to a thread
+                # that owns its own fresh ProactorEventLoop.
+                with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+                    text = pool.submit(_run_in_new_thread).result()
             except RuntimeError:
-                text = asyncio.run(_crawl())
+                # ── No running loop (plain .py script) ──
+                text = _run_in_new_thread()
 
             elapsed = time.time() - start
             result = {
@@ -173,17 +199,6 @@ def scrape_arxiv_abstracts(
     max_results: int = 5,
     save_path: Optional[str] = None,
 ) -> List[Dict[str, str]]:
-    """
-    Scrape arXiv paper abstracts for a given topic.
-
-    Args:
-        topic: Search query (e.g., "NLP", "AI safety", "robotics")
-        max_results: Number of papers to fetch
-        save_path: Path to save results as JSON (None to skip)
-
-    Returns:
-        List of dicts with 'title', 'abstract', 'url', 'authors' keys
-    """
     import requests
     import xml.etree.ElementTree as ET
     import time
@@ -192,7 +207,7 @@ def scrape_arxiv_abstracts(
     print(f"Scraping arXiv: '{topic}' (max {max_results} papers)")
     print("=" * 55)
 
-    base_url = "http://export.arxiv.org/api/query"
+    base_url = "https://export.arxiv.org/api/query"
     params = {
         "search_query": f"all:{topic}",
         "start": 0,
@@ -201,8 +216,47 @@ def scrape_arxiv_abstracts(
         "sortOrder": "descending",
     }
 
-    response = requests.get(base_url, params=params, timeout=30)
-    root = ET.fromstring(response.text)
+    # Retry logic: try up to 3 times
+    max_retries = 3
+    for attempt in range(1, max_retries + 1):
+        try:
+            print(f"  Attempt {attempt}/{max_retries}...")
+            response = requests.get(base_url, params=params, timeout=60)
+
+            # Handle rate limiting specifically
+            if response.status_code == 429:
+                wait = 30 * attempt  # wait 30s, 60s, 90s
+                print(f"  Rate limited (429). Waiting {wait}s before retry...")
+                time.sleep(wait)
+                continue  # go back to top of loop
+
+            response.raise_for_status()
+            break  # success
+
+        except requests.Timeout:
+            print(f"  Timeout on attempt {attempt}. ", end="")
+            if attempt < max_retries:
+                wait = attempt * 5
+                print(f"Retrying in {wait}s...")
+                time.sleep(wait)
+            else:
+                print("All attempts failed.")
+                return []
+
+        except requests.RequestException as e:
+            print(f"  Request error: {e}")
+            return []
+
+    if not response.text.strip():
+        print("Warning: Empty response from arXiv API")
+        return []
+
+    try:
+        root = ET.fromstring(response.text)
+    except ET.ParseError as e:
+        print(f"XML parse error: {e}")
+        print(f"Raw response (first 300 chars): {response.text[:300]}")
+        return []
 
     ns = {"atom": "http://www.w3.org/2005/Atom"}
     papers = []
@@ -223,7 +277,7 @@ def scrape_arxiv_abstracts(
         print(f"\n  [{len(papers)}] {title[:80]}...")
         print(f"      Authors: {', '.join(authors[:3])}{'...' if len(authors) > 3 else ''}")
         print(f"      Abstract: {abstract[:120]}...")
-        time.sleep(0.5)  # Be polite to arXiv API
+        time.sleep(0.5)
 
     print(f"\n  Total papers collected: {len(papers)}")
 
